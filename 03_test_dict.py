@@ -10,8 +10,8 @@ All this functions should check for errors, follow the comments to see all cases
 There should be NO ERRORS from Python in the console.
 """
 
-def add_to_dict(dictionary={}, word="", definition=""):
-  if type(dictionary)!=dict:
+def add_to_dict(dictionary, word="", definition=""):
+  if type(dictionary) is not dict:
     print(f"You need to send a dictionary. you sent: {type(dictionary)}") 
 
   elif word=="" or definition=="":
